@@ -32,7 +32,6 @@ body{
 main{
     height: calc(100vh - 90px);
     overflow: auto;
-    
 }
 
 .row{
@@ -70,8 +69,6 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
-    bottom: 20px;
     background-color: rgb(40, 37, 37);
     color: white;
 }
