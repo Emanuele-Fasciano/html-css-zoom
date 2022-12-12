@@ -1,5 +1,6 @@
 body{
     background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* OPTION */
@@ -9,7 +10,8 @@ body{
     justify-content: flex-end;
     background-color: black;
     color: white;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+    margin-top: 20px;
 
 }
 
@@ -17,20 +19,20 @@ body{
     margin-top: 5px;
 }
 
-.speaker-view{
+.speaker-view, .maximize{
+    background-color: rgba(221, 221, 221, 0.5);
     padding: 3px;
-    background-color: lightgrey;
-}
-
-.maximize{
-    background-color: lightgray;
-    padding: 3px;
+    margin: 0 5px;
+    border-radius: 5%;
+    cursor: pointer;
 }
 
 /* MAIN */
 
 main{
-    height: 100vh;;
+    height: calc(100vh - 90px);
+    overflow: auto;
+    
 }
 
 .row{
@@ -49,23 +51,29 @@ main{
     position: absolute;
     bottom: 5px;
     left: 0;
-}
-
-.name, i{
     color: white;
     background-color: rgba(221, 221, 221, 0.5);
+
 }
+
+.name i{
+    color: white;
+    background-color: rgba(221, 221, 221, 0.5);
+    cursor: pointer;
+}
+
 
 /* FOOTER */
 
 footer{
+    height: 70px;
     display: flex;
     justify-content: space-between;
-    background-color: black;
+    align-items: center;
+    position: sticky;
+    bottom: 20px;
+    background-color: rgb(40, 37, 37);
     color: white;
-
-    /* debug */
-    height: 60px;
 }
 
 ul{
@@ -74,4 +82,33 @@ ul{
 
 ul li{
     display: inline-block;
+    text-align: center;
+    margin: 0 10px;
+    cursor: pointer;
 }
+
+ li i{
+    font-size: 20px;
+}
+
+.description{
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+#green-icon{
+    color: lightgreen;
+}
+
+#end-meeting{
+    height: 70px;
+    line-height: 70px;
+    padding: 0 15px;
+    background-color: rgb(62, 59, 59);
+    color: red;
+    text-align: center;
+    font-weight: bold;
+    font-size: 11px;
+    cursor: pointer;
+}
+
