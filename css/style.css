@@ -1,10 +1,17 @@
 /* MAIN */
 
 .row{
-    display: flex;
-    flex-wrap: wrap;
+    text-align: center;
 }
 
-.images img{
-    width: calc(100% / 7);
+
+.image img{
+    position: relative;
+}
+ 
+.name{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
 }
