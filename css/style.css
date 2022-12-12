@@ -1,14 +1,59 @@
+body{
+    background-color: black;
+}
+
+/* OPTION */
+
+.option{
+    display: flex;
+    justify-content: flex-end;
+    background-color: black;
+    color: white;
+    margin-bottom: 30px;
+
+}
+
+.option-container{
+    margin-top: 5px;
+}
+
+.speaker-view{
+    padding: 3px;
+    background-color: lightgrey;
+}
+
+.maximize{
+    background-color: lightgray;
+    padding: 3px;
+}
+
 /* MAIN */
 
+main{
+    height: 100vh;;
+}
 
-.image img{
+.row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+
+.image{
     position: relative;
 }
  
 .name{
     position: absolute;
-    bottom: 0;
+    bottom: 5px;
+    left: 0;
+}
 
+.name, i{
+    color: white;
+    background-color: rgba(221, 221, 221, 0.5);
 }
 
 /* FOOTER */
