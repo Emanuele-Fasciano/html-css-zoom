@@ -1,0 +1,10 @@
+/* MAIN */
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.images img{
+    width: calc(100% / 7);
+}
