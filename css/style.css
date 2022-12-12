@@ -1,9 +1,5 @@
 /* MAIN */
 
-.row{
-    text-align: center;
-}
-
 
 .image img{
     position: relative;
@@ -12,6 +8,25 @@
 .name{
     position: absolute;
     bottom: 0;
-    left: 0;
 
+}
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+
+    /* debug */
+    height: 60px;
+}
+
+ul{
+    list-style: none;
+}
+
+ul li{
+    display: inline-block;
 }
